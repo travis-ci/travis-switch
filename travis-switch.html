@@ -51,8 +51,9 @@
       onText: 'ON',
       offText: 'OFF',
       // element is fully prepared
-      ready: function() { },
-      // instance of the element is created
+      ready: function() {
+        this.activeChanged();
+      },
       created: function() {
         this.activeChanged();
       },
