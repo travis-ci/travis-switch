@@ -17,7 +17,7 @@
         text-align: right;
       }
 
-      :host::before {
+      :host .switch {
         content: "";
         position: absolute;
         top: -1px;
@@ -28,7 +28,7 @@
         border: 1px solid #bdbdbd;
       }
 
-      :host.active {
+      :host(.active) {
         width: 56px;
         padding: 0 0 0 14px;
         background: #40454f;
@@ -37,11 +37,12 @@
         text-align: left;
       }
 
-      :host.active::before {
+      :host(.active) .switch {
         left: auto;
         right: -1px;
       }
     </style>
+    <span class="switch"></span>
     {{currentState}}
   </template>
   <script>
