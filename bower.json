@@ -1,0 +1,6 @@
+{
+  "name": "travis-switch",
+  "dependencies": {
+    "polymer": "Polymer/polymer"
+  }
+}
